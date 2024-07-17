@@ -1,0 +1,155 @@
+:root {
+  /* Colors */
+  /* Primary */
+  --primary--vd-magneta: hsl(300, 43%, 22%);
+  --primary-soft-pink: hsl(333, 80%, 67%);
+
+  /* Neutral */
+
+  --neutral-dg-magneta: hsl(303, 10%, 53%);
+  --neutral-lg-magneta: hsl(300, 24%, 96%);
+  --neutral-white: hsl(0, 0%, 100%);
+
+  /* Typography */
+
+  --ff-default: "League Spartan", sans-serif;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fs-default: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: var(--ff-default);
+  font-size: var(--fs-default);
+}
+.container {
+  max-width: 112rem;
+  margin: 10rem auto;
+}
+.testimonial-proof {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: start;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.testimonial-title h1 {
+  width: 35rem;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--primary--vd-magneta);
+}
+.testimonial-text p {
+  max-width: 40rem;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: var(--fw-medium);
+  color: hsla(300, 43%, 22%, 0.605);
+}
+
+.rating {
+  width: 40rem;
+  background-color: var(--neutral-lg-magneta);
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 1.2rem 3.2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1.1rem;
+  align-self: center;
+}
+.rating-1 {
+  transform: translateX(-4.8rem);
+}
+.rating-3 {
+  transform: translateX(4.8rem);
+}
+.icon-stars svg {
+  display: inline-block;
+}
+.rating span {
+  color: var(--primary--vd-magneta);
+  font-weight: var(--fw-bold);
+}
+
+.testimonials {
+  grid-column: 1/-1;
+  display: flex;
+  gap: 2rem;
+}
+
+.testitmonials-card {
+  width: 35rem;
+  padding: 4rem;
+  background-color: var(--primary--vd-magneta);
+  border-radius: 0.7rem;
+}
+
+.testitmonials-card img {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+}
+
+.card-2 {
+  transform: translateY(2rem);
+}
+.card-3 {
+  transform: translateY(4rem);
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.author-name {
+  color: var(--neutral-white);
+  font-weight: var(--fw-medium);
+}
+
+.tag {
+  color: var(--primary-soft-pink);
+}
+
+.author-content {
+  margin-top: 1rem;
+  color: var(--neutral-white);
+}
